@@ -1,5 +1,7 @@
 <?php
-Class AbmRol{
+
+class AbmRol {
+
     /**
      * Carga un objeto con los parámetros proporcionados.
      * @param array $param
