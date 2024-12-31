@@ -108,6 +108,7 @@ class AbmUsuarioRol {
             }
         }
         $arreglo = UsuarioRol::listar($where);
+        
         return $arreglo;
     }
 }
