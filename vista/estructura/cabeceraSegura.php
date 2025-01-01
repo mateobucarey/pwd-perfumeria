@@ -9,6 +9,12 @@ include_once("../../configuracion.php");
     <title>Document</title>
 </head>
 <?php
+$session = new Session();
+if(!$session->activa()){
+    header('location:../login/index.php');
+}
+
+
 $objSession = new Session();
 $resp = $objSession->validar();
 if($resp){
