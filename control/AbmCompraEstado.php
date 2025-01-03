@@ -104,7 +104,8 @@ class AbmCompraEstado{
             if (isset($param['idcompraestadotipo']))
                 $where .= " and idcompraestadotipo ='".$param['idcompraestadotipo']."'";
         }
-        $arreglo = CompraEstado::listar($where);  
+        $obj = new CompraEstado();
+        $arreglo = $obj->listar($where);
         return $arreglo;
     }
 

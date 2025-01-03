@@ -8,7 +8,7 @@ header("Cache-Control: no-cache, must-revalidate");
 // CONFIGURACION APP//
 /////////////////////////////
 
-$PROYECTO = 'PWD/pwd-perfumeria';
+$PROYECTO = 'pwd-perfumeria';
 
 // Variable que almacena el directorio del proyecto
 $ROOT = $_SERVER['DOCUMENT_ROOT']."/$PROYECTO/";

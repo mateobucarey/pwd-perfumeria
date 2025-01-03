@@ -108,7 +108,8 @@ class AbmMenu{
             if (isset($param['medeshabilitado']))
                 $where .= " and medeshabilitado ='".$param['medeshabilitado']."'";
         }
-        $arreglo = Menu::listar($where);  
+        $obj = new Menu();
+        $arreglo = $obj->listar($where);
         return $arreglo;
     }
 

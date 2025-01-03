@@ -107,8 +107,8 @@ class AbmUsuarioRol {
                 $where .= " and idrol = '" . $param['idrol'] . "'";
             }
         }
-        $arreglo = UsuarioRol::listar($where);
-        
+        $obj = new UsuarioRol();
+        $arreglo = $obj->listar($where);
         return $arreglo;
     }
 }

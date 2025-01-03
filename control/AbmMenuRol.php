@@ -98,7 +98,8 @@ class AbmMenuRol {
             if (isset($param['idrol']))
                 $where .= " and idrol = '" . $param['idrol'] . "'";
         }
-        $arreglo = MenuRol::listar($where);
+        $obj = new MenuRol();
+        $arreglo = $obj->listar($where);
         return $arreglo;
     }
 }
