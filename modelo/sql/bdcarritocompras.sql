@@ -298,3 +298,13 @@ INSERT INTO usuario (idusuario, usnombre, uspass, usmail, usdeshabilitado) VALUE
 ('1', 'Admin', '81dc9bdb52d04dc20036dbd8313ed055', 'admin@mail.com', '0000-00-00 00:00:00'),-- 1234
 ('2', 'Deposito', '81dc9bdb52d04dc20036dbd8313ed055', 'deposito@mail.com', '0000-00-00 00:00:00'),-- 1234
 ('3', 'Cliente', '81dc9bdb52d04dc20036dbd8313ed055', 'cliente@mail.com', '0000-00-00 00:00:00'); -- 1234
+
+INSERT INTO rol (`idrol`, `rodescripcion`) VALUES
+(1, 'Admin'),
+(2, 'Deposito'),
+(3, 'Cliente');
+
+INSERT INTO usuariorol (`idusuario`, `idrol`) VALUES
+(1, 1),
+(2, 2),
+(3, 3);

@@ -12,6 +12,9 @@ include_once("../../configuracion.php");
 $session = new Session();
 if(!$session->activa()){
     header('location:../login/index.php');
+}else{
+    $rol = $session->getRol();
+    
 }
 
 
