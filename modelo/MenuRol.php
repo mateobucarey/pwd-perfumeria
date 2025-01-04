@@ -40,6 +40,10 @@ class MenuRol {
         $this->mensajeoperacion = $mensajeoperacion;
     }
 
+    public function cargar(){
+
+    }
+
     // Métodos principales
     public function insertar() {
         $msj = false;
@@ -56,6 +60,23 @@ class MenuRol {
         }
         return $msj;
     }
+
+    public function modificar(){
+        $msj = false;
+        $base=new BaseDatos();
+        $sql="UPDATE menurol SET idmenu=". $this->getIdmenu().", idrol = ". $this->getIdrol()." WHERE idmenu= ".$this->getIdmenu()." AND idrol=". $this->getIdrol();
+        if ($base->Iniciar()) {
+            if ($base->Ejecutar($sql)) {
+                $msj = true;
+            } else {
+                $this->setmensajeoperacion("MenuRol->modificar: ".$base->getError());
+            }
+        } else {
+            $this->setmensajeoperacion("MenuRol->modificar: ".$base->getError());
+        }
+        return $msj;
+    }
+    
 
     public function eliminar() {
         $msj = false;

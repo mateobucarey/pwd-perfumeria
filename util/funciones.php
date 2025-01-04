@@ -22,28 +22,20 @@ function verEstructura($e){
 }
 
 // autoload para version 8.0
-spl_autoload_register(function($class_name) {
+spl_autoload_register(function($class_name){
     $directorys = array(
-        //Cambie los root, puse todo en minusculas
-        $_SESSION['ROOT'].'modelo/',
-        $_SESSION['ROOT'].'modelo/conector/',
-        $_SESSION['ROOT'].'control/',
-        //$_SESSION['ROOT'].'vista/',
-        //  $GLOBALS['ROOT'].'util/class/',
+        $GLOBALS['ROOT'].'modelo/',
+        $GLOBALS['ROOT'].'modelo/conector/',
+        $GLOBALS['ROOT'].'control/',
+      //  $GLOBALS['ROOT'].'util/class/',
     );
-
-    $i = 0;
-    $total_directories = count($directorys);
-
-    // Usamos un while para recorrer el array $directorys
-    while ($i < $total_directories) {
-        $directory = $directorys[$i];
-        if (file_exists($directory . $class_name . '.php')) {
-            // echo "se incluyó " . $directory . $class_name . '.php';
-            require_once($directory . $class_name . '.php');
-            break;  // Termina si encuentra el archivo
+    //print_object($directorys) ;
+    foreach($directorys as $directory){
+        if(file_exists($directory.$class_name . '.php')){
+            // echo "se incluyo".$directory.$class_name . '.php';
+            require_once($directory.$class_name . '.php');
+            return;
         }
-        $i++;
     }
-    return;
+    
 });

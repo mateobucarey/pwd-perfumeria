@@ -67,7 +67,6 @@ CREATE TABLE producto (
   pronombre varchar(250) NOT NULL,
   prodetalle varchar(512) NOT NULL,
   procantstock int(11) NOT NULL,
-  tipo varchar(20)  NOT NULL,
   imagenproducto varchar(512)  NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

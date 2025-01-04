@@ -106,7 +106,8 @@ class AbmCompraItem{
             if (isset($param['cicantidad']))
                 $where .= " and cicantidad ='".$param['cicantidad']."'";
         }
-        $arreglo = CompraItem::listar($where);  
+        $obj = new CompraItem();
+        $arreglo = $obj->listar($where);
         return $arreglo;
     }
 
