@@ -308,3 +308,28 @@ INSERT INTO usuariorol (`idusuario`, `idrol`) VALUES
 (1, 1),
 (2, 2),
 (3, 3);
+
+INSERT INTO producto (`idproducto`, `pronombre`, `prodetalle`, `procantstock`, `tipo`, `imagenproducto`) VALUES
+(1, 'Chanel No. 5 (50ml)', '130000', 10, 'perfume femenino', "../img/productos/perfume1.png"),
+(2, 'Dior Sauvage (100ml)', '150000', 10, 'perfume masculino', "../img/productos/perfume2.png"),
+(3, 'Yves Saint Laurent Black Opium (90ml)', '140000', 10, 'perfume femenino', "../img/productos/perfume3.png"),
+(4, 'Versace Eros (100ml)', '120000', 10, 'perfume masculino', "../img/productos/perfume4.png"),
+(5, 'Armani Acqua Di Gio (100ml)', '170000', 10, 'perfume masculino', "../img/productos/perfume5.png"),
+(6, 'Paco Rabanne 1 Million (100ml)', '150000', 10, 'perfume masculino', "../img/productos/perfume6.png"),
+(7, 'Dolce & Gabbana Light Blue (100ml)', '110000', 10, 'perfume masculino', "../img/productos/perfume7.png"),
+(8, 'Gucci Bloom (100ml)', '100000', 10, 'perfume femenino', "../img/productos/perfume8.png"),
+(9, 'Tom Ford Noir (100ml)', '190000', 10, 'perfume masculino', "../img/productos/perfume9.png"),
+(10, 'Lancôme La Vie Est Belle (75ml)', '120000', 10, 'perfume femenino', "../img/productos/perfume10.png"),
+(11, 'Calvin Klein Euphoria (100ml)', '150000', 10, 'perfume masculino', "../img/productos/perfume11.png"),
+(12, 'Jean Paul Gaultier Le Male (100ml)', '180000', 10, 'perfume masculino', "../img/productos/perfume12.png");
+
+INSERT INTO compraestadotipo (idcompraestadotipo, cetdescripcion, cetdetalle) VALUES
+(1, 'iniciada', 'cuando el usuario : cliente inicia la compra de uno o mas productos del carrito'),
+(2, 'aceptada', 'cuando el usuario administrador da ingreso a uno de las compras en estado = 1'),
+(3, 'enviada', 'cuando el usuario administrador envia a uno de las compras en estado = 2'),
+(4, 'cancelada', 'un usuario administrador podra cancelar una compra en cualquier estado y un usuario cliente solo en estado = 1');
+
+INSERT INTO `compra` (`idcompra`, `cofecha`, `idusuario`) VALUES
+(1, '2024-11-19 16:00:00', 1),
+(2, '2024-11-01 17:00:00', 2),
+(3, '2024-10-16 18:00:00', 3);
