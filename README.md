@@ -5,6 +5,7 @@ Este repositorio contiene el trabajo final de la materia **Programación Web Din
 
 ## Integrante
 - **Mateo Bucarey**
+- **Nico Bucarey**
 
 ## Librerías Utilizadas
 - **Bootstrap** (estilos y diseño responsiv)
