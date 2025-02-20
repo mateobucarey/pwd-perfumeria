@@ -5,7 +5,7 @@ Este repositorio contiene el trabajo final de la materia **Programación Web Din
 
 ## Integrante
 - **Mateo Bucarey**
-- **Nico Bucarey**
+- **Nicolas Bucarey**
 
 ## Librerías Utilizadas
 - **Bootstrap** (estilos y diseño responsiv)
@@ -15,3 +15,6 @@ Este repositorio contiene el trabajo final de la materia **Programación Web Din
 ## Características Principales
 - **Vista Pública:** Permite a los usuarios navegar por el home y conocer información sobre la tienda.
 - **Vista Privada:** Requiere autenticación y ofrece distintas funcionalidades según el rol del usuario (cliente, depósito o administrador).
+
+## Contraseña para probar
+- **Cliente/Deposito/Admin:** 1234.
