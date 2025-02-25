@@ -32,7 +32,7 @@ $listaRoles = $rol->buscar(null);
                                 for ($i = 0; $i < count($listaRoles); $i++) {
                                     $objRol = $listaRoles[$i];
                                     echo "<div class='form-check'>";
-                                    echo "<input type='checkbox' class='form-check-input' name='idrol' id='idrol' value=" . $objRol->getIdRol() . ">";
+                                    echo "<input type='radio' class='form-check-input' name='idrol' id='idrol' value=" . $objRol->getIdRol() . ">";
                                     echo "<label class='form-check-label' for='idrol'>" . $objRol->getRolDescripcion() . "</label>";
                                     echo "</div>";
                                 }

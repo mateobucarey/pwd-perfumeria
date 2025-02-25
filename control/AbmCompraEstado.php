@@ -380,7 +380,7 @@ class AbmCompraEstado{
 
         $AbmUsuario = new AbmUsuario();
         $AbmCompra = new AbmCompra();
-        
+        $idCompra = ['idcompra' => $param['idcompra']];
 
         $compra = $AbmCompra->buscar($idCompra);
 
@@ -397,6 +397,7 @@ class AbmCompraEstado{
 
         return $resp;
     }
+
 
     //funcion correo 
     public function enviarMail($email, $nombreUsuario, $asunto, $mensaje){

@@ -30,7 +30,7 @@ INSERT INTO usuario (idusuario, usnombre, uspass, usmail, usdeshabilitado) VALUE
 ('5', 'Admin', '81dc9bdb52d04dc20036dbd8313ed055', 'admin@mail.com', '0000-00-00 00:00:00'),
 ('6', 'Deposito', '81dc9bdb52d04dc20036dbd8313ed055', 'deposito@mail.com', '0000-00-00 00:00:00'),
 ('7', 'Cliente', '81dc9bdb52d04dc20036dbd8313ed055', 'cliente@mail.com', '0000-00-00 00:00:00'),
-('8', 'Nico', '81dc9bdb52d04dc20036dbd8313ed055', 'nicolas@gmail.com', '0000-00-00 00:00:00'),
+('8', 'Mateo', '81dc9bdb52d04dc20036dbd8313ed055', 'mateobucarey017@gmail.com', '0000-00-00 00:00:00'),
 ('9', 'Torres', '81dc9bdb52d04dc20036dbd8313ed055', 'torres@gmail.com', '0000-00-00 00:00:00');
 
 CREATE TABLE rol (
