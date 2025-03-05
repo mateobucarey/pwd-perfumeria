@@ -99,7 +99,7 @@ include_once("../estructuras/navegadorSeguro.php");
                                 <td> $' . $producto->getProDetalle() . '</td>
                                 <td>' . $objCompraItem->getCiCantidad() . '</td>';
                         
-                        if($tipoEstado == "cancelada"){
+                        if($tipoEstado == "cancelada" || $tipoEstado == "enviada"){
                             echo '<td>Sin Acción</td>';
                         } else {
                             echo '<td><a href="../action/eliminarArticuloCompra.php?idcompraitem=' . $objCompraItem->getIdCompraItem() . '" class="btn btn-warning" >Quitar Producto</a></td>';
@@ -121,7 +121,9 @@ include_once("../estructuras/navegadorSeguro.php");
                     echo '<div class="d-block"> <a href="../action/enviarCompra.php?idcompra=' . $objCompra->getIdCompra() . '" class="btn btn-success w-100"  mr-2 >Enviar Compra</a> 
                           <a href="../action/cancelarCompra.php?idcompra=' . $objCompra->getIdCompra() . '" class="btn btn-danger w-100" >Cancelar Compra</a> </div>';
                 } elseif ($tipoEstado == 'enviada') {
-                    echo '<div class="d-block"> <a href="../action/cancelarCompras.php?idcompra=' . $objCompra->getIdCompra() . '" class="btn btn-danger w-100" >Cancelar Compra</a> </div>';
+                    echo '<div class="d-block"> 
+                    <a href="#" class="btn btn-danger w-100 disabled">Cancelar Compra</a> 
+                  </div>';
                 } elseif ($tipoEstado == 'cancelada') {
                     echo 'CANCELADA';
                 }
@@ -154,5 +156,4 @@ include_once("../estructuras/navegadorSeguro.php");
 <?php
 include_once("../estructuras/pieDePagina.php");
 ?>
-
 
